@@ -1,6 +1,7 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -25,10 +26,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  padding: 10px;
 }
 
 h1 {
@@ -66,4 +66,78 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+nav h1 {
+  font-size: 16px;
+}
+
+nav select {
+  font-size: 16px;
+}
+
+.home-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: 0 auto 25px auto;
+}
+
+@media screen and (max-width: 450px) {
+  .home-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .btn-groups {
+    flex-direction: column;
+  }
+}
+
+.readable-banner {
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn-groups {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn-label {
+  display: inline-block;
+  width: 100px;
+}
+
+.btn-group button {
+  border: 1px solid #ccc;
+}
+
+.ball {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  background-color: red;
+  border-radius: 100%;
 }
