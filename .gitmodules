@@ -1,0 +1,3 @@
+[submodule "complete-intro-to-react-v8"]
+	path = complete-intro-to-react-v8
+	url = https://github.com/btholt/complete-intro-to-react-v8.git
